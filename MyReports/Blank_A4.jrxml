@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="80630984-6347-4d40-92f7-926360026f6a">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter"/>
+	<queryString language="JSON">
+		<![CDATA[posicao.saldo]]>
+	</queryString>
+	<field name="nome" class="java.lang.String">
+		<property name="net.sf.jasperreports.json.field.expression" value="nome"/>
+		<fieldDescription><![CDATA[nome]]></fieldDescription>
+	</field>
+	<field name="valor" class="java.lang.Integer">
+		<property name="net.sf.jasperreports.json.field.expression" value="valor"/>
+		<fieldDescription><![CDATA[valor]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="30" width="550" height="30" uuid="18b66483-5a4c-40f1-9feb-71cae14d2197"/>
+				<textElement>
+					<font size="20"/>
+				</textElement>
+				<text><![CDATA[Demonstrativo de investimentos]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="175" splitType="Stretch">
+			<pieChart>
+				<chart evaluationTime="Report">
+					<reportElement x="-20" y="0" width="170" height="170" uuid="e1d13a39-199e-4a88-936d-d9d03eae49f8"/>
+					<chartTitle/>
+					<chartSubtitle/>
+					<chartLegend/>
+				</chart>
+				<pieDataset>
+					<dataset resetType="Report"/>
+					<keyExpression><![CDATA[$F{nome}]]></keyExpression>
+					<valueExpression><![CDATA[$F{valor}]]></valueExpression>
+					<labelExpression><![CDATA["" + $F{valor}]]></labelExpression>
+				</pieDataset>
+				<piePlot>
+					<plot/>
+					<itemLabel/>
+				</piePlot>
+			</pieChart>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="240" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,38 @@
+{
+	"id": "588bffda-9b25-fa16-e0ca-39ba4dcffcda",
+	"name": "poc",
+	"description": "",
+	"order": [
+		"dad946cb-3bad-8a72-7aab-6327abfd1cc2"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1662181432243,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "dad946cb-3bad-8a72-7aab-6327abfd1cc2",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8080/api/student/report",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "588bffda-9b25-fa16-e0ca-39ba4dcffcda",
+			"data": null,
+			"dataMode": "params",
+			"name": "http://localhost:8080/api/student/report",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1662181433626,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}
